@@ -164,8 +164,8 @@ export default function Home() {
             create something amazing together!
           </p>
         </section>
-        <div className='bg-gradient-to-b from-teal-400 to-white rounded-full h-80 w-80 relative overflow-hidden mx-auto pt-4 -ml-3 md:mx-auto'>
-          <Image alt={"img"} src={deved} layout='fill' objectFit='cover' />
+       <div className='bg-gradient-to-b from-teal-400 to-white rounded-full h-80 w-80 relative overflow-hidden mx-auto pt-4  '>
+                  <Image alt={"img"} src={deved} layout='fill' objectFit='cover' />
         </div>
 
         {/* Project Section */}
