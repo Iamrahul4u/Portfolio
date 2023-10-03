@@ -1,0 +1,63 @@
+.main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.p {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+.span {
+  position: relative;
+}
+
+.span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 24px;
+  background: #000;
+  bottom: 9px;
+  transition: all 0.2s ease-out;
+}
+
+.p:hover {
+  background-position: 0 22px;
+}
+
+.span:hover:before {
+  transform: translateY(10px);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
+  .p {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .span:before {
+    height: 12px; /* Adjust height for smaller screens */
+    bottom: 4px; /* Adjust bottom position for smaller screens */
+  }
+
+  .p:hover {
+    background-position: 0 10px; /* Adjust background position for smaller screens */
+  }
+
+  .span:hover:before {
+    transform: translateY(5px); /* Adjust translateY for smaller screens */
+  }
+}
