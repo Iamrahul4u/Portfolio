@@ -14,7 +14,7 @@ export default function Home() {
       <section className='min-h-screen px-10 md:px-20 lg:px-40 text-black overflow-hidden '>
         <nav className='flex justify-center md:justify-between p-10'>
           <a
-            href='#'
+            href='/'
             className='md:text-3xl hidden md:block text-xl font-bold font-mono '
           >
             RahulGupta
@@ -22,6 +22,7 @@ export default function Home() {
           <ul className='flex '>
             <li className='md:ml-5 -mt-4 '>
               <a
+                target='_blank'
                 href='https://github.com/Iamrahul4u'
                 className='relative inline-block text-sm md:text-lg group'
               >
@@ -41,6 +42,7 @@ export default function Home() {
             </li>
             <li className='ml-5 -mt-4'>
               <a
+                target='_blank'
                 href='https://www.linkedin.com/in/iamrahul4u'
                 className='relative inline-block text-sm md:text-lg group'
               >

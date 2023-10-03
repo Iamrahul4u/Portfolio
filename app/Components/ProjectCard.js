@@ -28,6 +28,7 @@ function ProjectCard({ project }) {
         </p>
         <p className='flex flex-wrap gap-2 flex-row items-center  justify-start text-xs md:text-sm '>
           <a
+            target='_blank'
             href={project.github}
             className='relative inline-block text-lg group'
           >
@@ -42,6 +43,7 @@ function ProjectCard({ project }) {
             ></span>
           </a>
           <a
+            target='_blank'
             href={project.linkedIn}
             className='relative inline-block text-lg group'
           >
