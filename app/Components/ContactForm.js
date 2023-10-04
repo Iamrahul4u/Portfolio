@@ -1,14 +1,45 @@
+"use client";
+
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 function ContactForm() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const email = {
+      email: form.current.email.value,
+      message: form.current.message.value,
+      subject: form.current.subject.value,
+    };
+    console.log(email);
+    emailjs
+      .sendForm(
+        "service_tgod81q",
+        "template_zefuiup",
+        form.current,
+        "GGZOGFcYZi3jRq7BC"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section className='bg-white '>
       <div className='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
-        <h2 className='font-mono text-8xl mt-20 underline mb-10 text-center text-black '>
+        <h2 className='font-mono md:text-8xl text-4xl mt-20 underline  mb-10 text-center text-black '>
           Contact Me
         </h2>
         <p className='mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-xl'>
           Have any Awesome Idea? Let's discuss! or you can just say Hi.. :)
         </p>
-        <form action='#' className='space-y-8'>
+        <form className='space-y-8' ref={form} onSubmit={sendEmail}>
           <div>
             <label className='block mb-2 text-sm font-medium text-gray-900'>
               Your email
@@ -16,7 +47,7 @@ function ContactForm() {
             <input
               type='email'
               id='email'
-              className='shadow-sm border  text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light'
+              className=' border  text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light'
               placeholder='name@email.com'
               required
             />

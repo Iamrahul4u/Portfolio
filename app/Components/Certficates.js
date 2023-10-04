@@ -56,7 +56,7 @@ function Certificates(props) {
                       By {Certificate.by}
                     </p>
                     <p className='text-sm text-gray-600 mb-1 '>
-                      Issued Sep 2023
+                      Issued {Certificate.date}
                     </p>
                     <p className='max-w-lg'>
                       <b>Skills</b>-{Certificate.tags}
@@ -64,7 +64,7 @@ function Certificates(props) {
                   </div>
 
                   <a
-                    class=' 
+                    className=' 
             inline-flex justify-center my-auto mt-5 px-4 py-2 rounded-md gap-2 button-placement-wrap hover:bg-black hover:text-white
             
             '
@@ -100,6 +100,7 @@ function Certificates(props) {
                       className='hidden-img z-50'
                       height={500}
                       width={800}
+                      alt={Certificate.imgurl}
                       objectFit='contain'
                     />
                   </div>

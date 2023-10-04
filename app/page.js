@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillCaretDown,
+} from "react-icons/ai";
 import deved from "../public/dev-ed-wave.png";
 import "./styles.css";
 import "./globals.css";
@@ -110,9 +115,7 @@ export default function Home() {
               <div
                 id='&nbsp; '
                 className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
-              >
-                &nbsp;
-              </div>
+              ></div>
             </div>
             <div className='wrapper'>
               <div
@@ -155,19 +158,27 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h3 className='text-xl  md:mt-32 mt-10  font-bold font-mono md:text-3xl'>
+          <h3 className='text-xl  md:mt-32 mt-10  font-bold  font-mono md:text-3xl'>
             FullStack Developer
+            <a
+              target='_blank'
+              href='https://drive.google.com/file/d/1quEohhsnahsOkh10OgfOVRLrH9NA2fsn/view?usp=sharing'
+            >
+              <button className='button inline-flex gap-1 md:text-xl text-sm mt-2 hover:bg-white hover:text-black hover:border border-2 border-black ml-3'>
+                <AiFillCaretDown className='mt-1' />
+                Resume
+              </button>
+            </a>
           </h3>
           <p className='text-md py-5 leading-8 md:max-w-lg mx-auto'>
             I'm a Fullstack Developer.I craft seamless web designs and bring
             them to life with robust backend solutions. Let's innovate and
             create something amazing together!
           </p>
+          <div className='bg-gradient-to-b from-teal-400  to-white rounded-full h-80 w-80 relative overflow-hidden mx-auto pt-4  '>
+            <Image alt={"img"} src={deved} layout='fill' objectFit='cover' />
+          </div>
         </section>
-        <div className='bg-gradient-to-b from-teal-400 to-white rounded-full h-80 w-80 relative overflow-hidden mx-auto pt-4  '>
-          <Image alt={"img"} src={deved} layout='fill' objectFit='cover' />
-        </div>
-
         {/* Project Section */}
         <div>
           <h1 className='font-mono md:text-8xl text-4xl mt-32 underline text-center text-black'>
