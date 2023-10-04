@@ -8,6 +8,8 @@ import ProjectsData from "../app/Components/ProjectsData";
 import ContactForm from "./Components/ContactForm";
 import Heading from "./Components/Heading";
 import Videocard from "./Components/Videocard";
+import Certficates from "./Components/Certficates";
+import CertificatesData from "./Components/CertificatesData";
 export default function Home() {
   return (
     <main>
@@ -15,7 +17,7 @@ export default function Home() {
         <nav className='flex justify-center md:justify-between p-10'>
           <a
             href='/'
-            className='md:text-3xl hidden md:block text-xl font-bold font-mono '
+            className='md:text-3xl hidden font-mono md:block text-xl font-bold font-mono '
           >
             RahulGupta
           </a>
@@ -63,8 +65,6 @@ export default function Home() {
           </ul>
         </nav>
         <section className='flex flex-col p-2 text-center'>
-          <div className='overlay mb-20'></div>
-
           <div className='text md:mt-20 mt-20 '>
             <div className='wrapper'>
               <div
@@ -155,7 +155,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h3 className='text-xl md:text-2xl md:mt-10 -mt-10 font-bold font-mono md:text-3xl'>
+          <h3 className='text-xl  md:mt-10 mt-10  font-bold font-mono md:text-3xl'>
             FullStack Developer
           </h3>
           <p className='text-md py-5 leading-8 md:max-w-lg mx-auto'>
@@ -164,15 +164,22 @@ export default function Home() {
             create something amazing together!
           </p>
         </section>
-        <div className='bg-gradient-to-b from-teal-400 to-white rounded-full h-80 w-80 relative overflow-hidden mx-auto pt-4 -ml-3 md:mx-auto'>
+        <div className='bg-gradient-to-b from-teal-400 to-white rounded-full h-80 w-80 relative overflow-hidden mx-auto pt-4  '>
           <Image alt={"img"} src={deved} layout='fill' objectFit='cover' />
         </div>
 
         {/* Project Section */}
         <div>
-          <Heading heading={"MY PROJECTS"} />
+          <h1 className='font-mono md:text-8xl text-4xl mt-32 underline text-center text-black'>
+            Projects
+          </h1>
           <ProjectsData />
         </div>
+        <h1 className='font-mono md:text-8xl text-4xl mt-10 underline mb-20 text-center text-black'>
+          Certficates
+        </h1>
+        {/* <Certficates /> */}
+        <CertificatesData />
         <footer>
           <ContactForm />
         </footer>

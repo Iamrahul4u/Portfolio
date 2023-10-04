@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function ProjectCard({ project }) {
   return (
-    <div className='basis-1/4 flex-1 border-2 rounded-md  justify-center border-black shadow-md hover:shadow-slate-500  overflow-hidden'>
+    <div className='basis-1/4 flex-1 border-2 rounded-md  justify-center  border-black shadow-md hover:shadow-slate-500  overflow-hidden'>
       <Image
         alt={"img"}
         src={project.imgurl}
@@ -13,7 +13,7 @@ function ProjectCard({ project }) {
         className='rounded-t-md overflow-hidden object-contain flex-1 '
       />
       <div className='w-full p-4 text-black justify-between '>
-        <h3 className='text-lg md:text-xl mb-2 md:mb-3 font-semibold '>
+        <h3 className='text-lg md:text-xl mb-2 md:mb-3 font-mono font-semibold '>
           {project.title}
         </h3>
         <p class='flex flex-row flex-wrap gap-2 mb-5 items-center  justify-start text-xs md:text-sm '>
