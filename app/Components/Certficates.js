@@ -14,7 +14,7 @@ function Certificates(props) {
       linkHoverReveal[index].style.opacity = 1;
       linkHoverReveal[
         index
-      ].style.transform = `translate(-10%, -25%) rotate(5deg)`;
+      ].style.transform = `translate(-20%, -60%) rotate(-5deg)`;
       linkImages[index].style.transform = "scale(1, 1)";
       linkHoverReveal[index].style.left = e.clientX + "px";
     };
@@ -23,8 +23,8 @@ function Certificates(props) {
       linkHoverReveal[index].style.opacity = 0;
       linkHoverReveal[
         index
-      ].style.transform = `translate(-40%, -40%) rotate(-5deg)`;
-      linkImages[index].style.transform = "scale(0)";
+      ].style.transform = `translate(-20%, -20%) rotate(5deg)`;
+      linkImages[index].style.transform = "scale(1)";
     };
 
     links.forEach((link, index) => {
@@ -94,7 +94,7 @@ function Certificates(props) {
                     </div>
                   </a>
 
-                  <div className='hover-reveal image01'>
+                  <div className='hover-reveal hidden md:block image01 overflow-hidden'>
                     <Image
                       src={Certificate.imgurl}
                       className='hidden-img z-50'

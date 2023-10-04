@@ -65,11 +65,11 @@ export default function Home() {
           </ul>
         </nav>
         <section className='flex flex-col p-2 text-center'>
-          <div className='text md:mt-20  mt-20 '>
+          <div className='text md:mt-20 md:mb-20  mt-20 '>
             <div className='wrapper'>
               <div
                 id='R'
-                className='letter -mr-2 -ml-2 md:m-0  md:text-7xl text-3xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono  md:text-8xl text-3xl'
               >
                 R
               </div>
@@ -77,7 +77,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='A'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 A
               </div>
@@ -85,7 +85,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='H'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 H
               </div>
@@ -93,7 +93,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='U'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 U
               </div>
@@ -101,7 +101,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='L'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 L
               </div>
@@ -109,7 +109,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='&nbsp; '
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 &nbsp;
               </div>
@@ -117,7 +117,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='G'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 G
               </div>
@@ -125,7 +125,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='U'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 U
               </div>
@@ -133,7 +133,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='P'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 P
               </div>
@@ -141,7 +141,7 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='T'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 T
               </div>
@@ -149,13 +149,13 @@ export default function Home() {
             <div className='wrapper'>
               <div
                 id='A'
-                className='letter -mr-2 -ml-2 md:m-0 text-3xl  md:text-7xl'
+                className='letter -mr-2 -ml-2 md:m-0 font-mono text-3xl  md:text-8xl'
               >
                 A
               </div>
             </div>
           </div>
-          <h3 className='text-xl  md:mt-20 mt-10  font-bold font-mono md:text-3xl'>
+          <h3 className='text-xl  md:mt-32 mt-10  font-bold font-mono md:text-3xl'>
             FullStack Developer
           </h3>
           <p className='text-md py-5 leading-8 md:max-w-lg mx-auto'>
