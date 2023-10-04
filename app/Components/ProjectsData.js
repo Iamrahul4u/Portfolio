@@ -49,12 +49,13 @@ const projects = [
     linkedIn: "https://www.linkedin.com/in/iamrahul4u/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Portfolio ",
     imgurl: "/web6.png",
     tags: ["React", "Next JS", "Tailwind"],
     github: "https://github.com/Iamrahul4u/Portfolio",
-    linkedIn: "https://www.linkedin.com/in/iamrahul4u/",
+    linkedIn:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7115196017913819136/",
   },
 ];
 const filter = [

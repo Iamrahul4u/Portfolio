@@ -25,8 +25,10 @@ module.exports = {
     },
   },
   fontFamily: {
+    Barcelony: ["BARCELONY", "cursive"],
     body: [
       "Inter",
+      "BARCELONY",
       "ui-sans-serif",
       "system-ui",
       "-apple-system",
@@ -42,6 +44,7 @@ module.exports = {
       "Segoe UI Symbol",
       "Noto Color Emoji",
     ],
+
     sans: [
       "Inter",
       "ui-sans-serif",
