@@ -57,6 +57,15 @@ const projects = [
     linkedIn:
       "https://www.linkedin.com/feed/update/urn:li:activity:7115196017913819136/",
   },
+  {
+    id: 7,
+    title: "Issue Tracker ",
+    imgurl: "/Issue-tracker.png",
+    tags: ["React", "Next JS", "Tailwind", "Prisma", "Mongodb", "Radix UI"],
+    github: "https://github.com/Iamrahul4u/issue-tracker",
+    linkedIn:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7121342586966949888/",
+  },
 ];
 const filter = [
   "React",
@@ -65,6 +74,8 @@ const filter = [
   "React Router",
   "Tailwind",
   "Api",
+  "Mongodb",
+  "Prisma",
 ];
 
 const ProjectsData = () => {
