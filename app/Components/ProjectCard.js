@@ -2,9 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { AiOutlineReload } from "react-icons/ai";
 import { Toaster, toast } from "sonner";
 function ProjectCard({ project }) {
   const [isVideo, setVideo] = useState(false);
+  const [loading, setloading] = useState(false);
   const videoRef = useRef(null);
   const handleHover = () => {
     const video = videoRef.current;
@@ -26,8 +28,14 @@ function ProjectCard({ project }) {
         )}
         {isVideo && (
           <>
+            {loading && (
+              <div className="w-full h-52 flex items-center justify-center ">
+                Loading
+                <AiOutlineReload className="animate-spin" />
+              </div>
+            )}
             <video
-              width="600"
+              width="500"
               ref={videoRef}
               onMouseEnter={handleHover}
               onMouseLeave={() => {
@@ -35,7 +43,10 @@ function ProjectCard({ project }) {
                 setVideo(false);
               }}
               autoPlay
-              height="600"
+              height="500"
+              onLoadStart={() => setloading(true)}
+              onLoadedData={() => setloading(false)}
+              className=" transition-opacity duration-1000 ease-in-out delay-300"
             >
               <source src={project.videoLink} type="video/mp4" />
               Your browser does not support the video tag.
@@ -43,7 +54,7 @@ function ProjectCard({ project }) {
           </>
         )}
       </div>
-      <div className="w-full p-4 text-black justify-between ">
+      <div className="p-4 text-black justify-between ">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-mono font-semibold ">
           {project.title}
         </h3>
