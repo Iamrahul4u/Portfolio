@@ -1,0 +1,57 @@
+.buttonlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.buttonlink:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+.buttonlink svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+.buttonlink:hover svg {
+  transform: scale(3) translate(10%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-10%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.buttonlink:hover .now {
+  transform: translateX(5px);
+  transition-delay: 300ms;
+}
+
+.buttonlink:hover .play {
+  transform: translateX(40%);
+  transition-delay: 300ms;
+}

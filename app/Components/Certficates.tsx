@@ -42,66 +42,65 @@ function Certificates(props) {
 
   return (
     <div>
-      <nav className='navi '>
+      <nav className="navi ">
         <ul>
           {CertificateData.map((Certificate) => {
             return (
               <li key={Certificate.id}>
-                <div className='link -mb-6 -mt-6 flex-col md:flex md:flex-row'>
+                <div className="link -mb-6 -mt-6 flex-col md:flex md:flex-row">
                   <div>
-                    <span className='-ml-1 mb-4 text-3xl md:text-[4rem]'>
+                    <span className="-ml-1 mb-4 text-3xl md:text-[4rem]">
                       {Certificate.title}
                     </span>
-                    <p className='font-mono text-gray-600'>
+                    <p className="font-mono text-gray-600">
                       By {Certificate.by}
                     </p>
-                    <p className='text-sm text-gray-600 mb-1 '>
+                    <p className="text-sm text-gray-600 mb-1 ">
                       Issued {Certificate.date}
                     </p>
-                    <p className='max-w-lg'>
+                    <p className="max-w-lg">
                       <b>Skills</b>-{Certificate.tags}
                     </p>
                   </div>
 
                   <a
-                    className=' 
+                    className=" 
             inline-flex justify-center my-auto mt-5 px-4 py-2 rounded-md gap-2 button-placement-wrap hover:bg-black hover:text-white
             
-            '
-                    target='_blank'
-                    href='https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/5b20e93981c25a3ce34a8965dd6561f6'
+            "
+                    target="_blank"
+                    href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/5b20e93981c25a3ce34a8965dd6561f6"
                   >
-                    <p class='text-sm '>Show credential</p>
-                    <div class='pvs-navigation__icon'>
+                    <p cn="text-sm ">Show credential</p>
+                    <div cn="pvs-navigation__icon">
                       <li-icon
-                        aria-hidden='true'
-                        type='link-external'
-                        size='small'
+                        aria-hidden="true"
+                        type="link-external"
+                        size="small"
                       >
                         <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          viewBox='0 0 16 16'
-                          data-supported-dps='16x16'
-                          fill='currentColor'
-                          className='mercado-match '
-                          width='16'
-                          height='16'
-                          focusable='false'
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          data-supported-dps="16x16"
+                          fill="currentColor"
+                          className="mercado-match "
+                          width="16"
+                          height="16"
+                          focusable="false"
                         >
-                          <path d='M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z'></path>
+                          <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
                         </svg>
                       </li-icon>
                     </div>
                   </a>
 
-                  <div className='hover-reveal hidden md:block image01 overflow-hidden'>
+                  <div className="hover-reveal hidden md:block image01 overflow-hidden">
                     <Image
                       src={Certificate.imgurl}
-                      className='hidden-img z-50'
+                      className="hidden-img z-50"
                       height={500}
                       width={800}
                       alt={Certificate.imgurl}
-                      objectFit='contain'
                     />
                   </div>
                 </div>

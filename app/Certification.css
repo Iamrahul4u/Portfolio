@@ -29,7 +29,7 @@
   mix-blend-mode: difference;
   display: inline-block;
   position: relative;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 .navi ul li .link > img {
