@@ -71,8 +71,8 @@ function Certificates(props) {
                     target="_blank"
                     href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/5b20e93981c25a3ce34a8965dd6561f6"
                   >
-                    <p cn="text-sm ">Show credential</p>
-                    <div cn="pvs-navigation__icon">
+                    <p className="text-sm ">Show credential</p>
+                    <div className="pvs-navigation__icon">
                       <li-icon
                         aria-hidden="true"
                         type="link-external"

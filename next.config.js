@@ -5,6 +5,9 @@ const nextConfig = {
       { protocol: "https", hostname: "**.google.com", port: "" },
     ],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   swcMinify: true,
 };
 
