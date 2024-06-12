@@ -16,7 +16,7 @@ export async function AnimatedShinyTextDemo({ link }: { link: string }) {
     >
       <Link href={link}>
         <div className="group relative flex justify-center items-center text-zinc-600 text-sm font-bold">
-          <div className="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[150%] -translate-y-[300%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
+          <div className="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[70%] -translate-y-[120%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
             <div className="bg-lime-200 flex items-center gap-1 p-2 rounded-md">
               <svg
                 fill="none"
@@ -151,7 +151,7 @@ export async function AnimatedShinyTextDemo({ link }: { link: string }) {
                 </filter>
               </defs>
             </svg>
-            <span className="text-[0px] group-hover:text-sm text-white duration-300">
+            <span className="text-[0px] group-hover:text-xsm md:group-hover:text-sm  text-white duration-300">
               Live Website
             </span>
           </div>

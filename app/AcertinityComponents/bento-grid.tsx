@@ -19,7 +19,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[30rem] lg:auto-rows-[35rem]   grid-cols-1 md:grid-cols-2   gap-6 w-[70%]  mx-auto ",
+        "grid md:auto-rows-[30rem] lg:auto-rows-[35rem] justify-center grid-cols-1 md:grid-cols-2  gap-6 md:w-[70%]  mx-auto",
         className,
       )}
     >
@@ -50,7 +50,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl z-50  bg-gray-50 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-[30rem] md:h-[35rem] transition duration-200 mx-auto p-6 border  justify-start  flex flex-col   ease-linear",
+        "row-span-1 rounded-xl z-50  bg-gray-50 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-[35rem]   transition duration-200  p-2 border  justify-around  flex flex-col   ease-linear",
         className,
       )}
     >
@@ -68,7 +68,7 @@ export const BentoGridItem = ({
           </div>
           {liveLink && <AnimatedShinyTextDemo link={liveLink} />}
         </div>
-        <div className="flex  gap-2">
+        <div className="flex md:flex-row flex-col gap-2">
           <ProjectButton
             name={"Github"}
             href={github}

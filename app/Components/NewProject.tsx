@@ -7,7 +7,7 @@ import ThreeDCardDemo from "./FloatingCard";
 
 export default function ProjectBentoGrid() {
   return (
-    <BentoGrid className="mx-auto ">
+    <BentoGrid className="-mt-24 px-3 md:px-0">
       {projects.map((item, i) => (
         <BentoGridItem
           key={item.id}
