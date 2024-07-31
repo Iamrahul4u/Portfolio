@@ -17,7 +17,7 @@ export default function Home() {
       <div className="relative overflow-visible ">
         {/* <div className="-top-56  absolute -right-56 md:-right-72 z-[5000] mx-auto w-[50%]  h-[100%] p-12 bg-transparent "> */}
         <div className="  absolute  -top-72 -right-36 md:-right-96 md:-top-56   z-[50]  w-[100%]  h-[100%] p-12 bg-transparent ">
-          <GlobeDemo />
+{/*           <GlobeDemo /> */}
         </div>
         <Hero />
         <DockDemo />
