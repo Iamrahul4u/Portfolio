@@ -31,9 +31,9 @@ function ProjectCard({ project }) {
         {isVideo && (
           <>
             {loading && (
-              <div className="w-full h-full flex items-center justify-center">
+              <div className="w-full h-full flex items-center text-white justify-center">
                 Loading
-                <AiOutlineReload className="animate-spin" />
+                <AiOutlineReload className="animate-spin text-white" />
               </div>
             )}
             <video
