@@ -49,16 +49,16 @@ function Certificates(props) {
               <li key={Certificate.id}>
                 <div className="link -mb-6 -mt-6 flex-col md:flex md:flex-row">
                   <div>
-                    <span className="-ml-1 mb-4 text-3xl md:text-[4rem]">
+                    <span className="-ml-1 mb-4 text-white text-3xl md:text-[4rem]">
                       {Certificate.title}
                     </span>
-                    <p className="font-mono text-gray-600">
+                    <p className="font-mono text-gray-200">
                       By {Certificate.by}
                     </p>
-                    <p className="text-sm text-gray-600 mb-1 ">
+                    <p className="text-sm text-gray-200 mb-1 ">
                       Issued {Certificate.date}
                     </p>
-                    <p className="max-w-lg">
+                    <p className="max-w-lg text-white">
                       <b>Skills</b>-{Certificate.tags}
                     </p>
                   </div>
@@ -71,7 +71,7 @@ function Certificates(props) {
                     target="_blank"
                     href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/5b20e93981c25a3ce34a8965dd6561f6"
                   >
-                    <p className="text-sm ">Show credential</p>
+                    <p className="text-sm text-white">Show credential</p>
                     <div className="pvs-navigation__icon">
                       <li-icon
                         aria-hidden="true"
