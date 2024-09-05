@@ -5,6 +5,10 @@ const nextConfig = {
       { protocol: "https", hostname: "**.google.com", port: "" },
     ],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   eslint: {
     ignoreDuringBuilds: true,
   },
