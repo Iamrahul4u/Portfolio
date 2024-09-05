@@ -11,7 +11,7 @@ export async function AnimatedShinyTextDemo({ link }: { link: string }) {
   return (
     <div
       className={cn(
-        "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
+        "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
       )}
     >
       <Link href={link}>
@@ -26,19 +26,13 @@ export async function AnimatedShinyTextDemo({ link }: { link: string }) {
                 xmlns="http://www.w3.org/2000/svg"
                 className="stroke-zinc-600"
               >
-                <circle stroke-linejoin="round" r="9" cy="12" cx="12"></circle>
-                <path
-                  stroke-linejoin="round"
-                  d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"
-                ></path>
-                <path
-                  stroke-linejoin="round"
-                  d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"
-                ></path>
-                <path stroke-linejoin="round" d="M3 12H21"></path>
-                <path stroke-linejoin="round" d="M19.5 7.5H4.5"></path>
+                <circle r="9" cy="12" cx="12"></circle>
+                <path d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"></path>
+                <path d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"></path>
+                <path d="M3 12H21"></path>
+                <path d="M19.5 7.5H4.5"></path>
                 <g filter="url(#filter0_d_15_556)">
-                  <path stroke-linejoin="round" d="M19.5 16.5H4.5"></path>
+                  <path d="M19.5 16.5H4.5"></path>
                 </g>
                 <defs>
                   <filter
@@ -97,19 +91,13 @@ export async function AnimatedShinyTextDemo({ link }: { link: string }) {
               xmlns="http://www.w3.org/2000/svg"
               className="stroke-white"
             >
-              <circle stroke-linejoin="round" r="9" cy="12" cx="12"></circle>
-              <path
-                stroke-linejoin="round"
-                d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"
-              ></path>
-              <path
-                stroke-linejoin="round"
-                d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"
-              ></path>
-              <path stroke-linejoin="round" d="M3 12H21"></path>
-              <path stroke-linejoin="round" d="M19.5 7.5H4.5"></path>
+              <circle r="9" cy="12" cx="12"></circle>
+              <path d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"></path>
+              <path d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"></path>
+              <path d="M3 12H21"></path>
+              <path d="M19.5 7.5H4.5"></path>
               <g filter="url(#filter0_d_15_556)">
-                <path stroke-linejoin="round" d="M19.5 16.5H4.5"></path>
+                <path d="M19.5 16.5H4.5"></path>
               </g>
               <defs>
                 <filter

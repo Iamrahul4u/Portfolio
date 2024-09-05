@@ -20,7 +20,7 @@ export const BentoGrid = ({
     <div
       className={cn(
         "grid md:auto-rows-[30rem] lg:auto-rows-[35rem] justify-center grid-cols-1 md:grid-cols-2  gap-6 md:w-[70%]  mx-auto",
-        className,
+        className
       )}
     >
       {children}
@@ -51,7 +51,7 @@ export const BentoGridItem = ({
     <div
       className={cn(
         "row-span-1 rounded-xl z-50  bg-gray-50 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-[35rem]   transition duration-200  p-2 border  justify-around  flex flex-col   ease-linear",
-        className,
+        className
       )}
     >
       {header}

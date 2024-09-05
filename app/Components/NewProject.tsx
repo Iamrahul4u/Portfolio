@@ -140,15 +140,7 @@ const projects = [
     description:
       "Job Portal, Resume Builder, and Coding Platform With AI Assistant.",
   },
-  {
-    id: 10,
-    title: "Issue Tracker",
-    imgurl: "/Issue-tracker.png",
-    tags: ["React", "Next JS", "Tailwind", "Prisma", "Mongodb", "Radix UI"],
 
-    description:
-      "A comprehensive issue tracking application built with the MERN stack, enabling efficient management and resolution of project tasks.",
-  },
   {
     id: 7,
     title: "Issue Tracker",
