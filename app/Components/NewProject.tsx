@@ -57,6 +57,11 @@ export const images = {
     name: "Prisma",
     image: "/projectsTags/light-prisma-svgrepo-com.svg",
   },
+  reduxtoolkitImg: {
+    id: 64,
+    name: "Prisma",
+    image: "/projectsTags/redux-svgrepo-com.svg",
+  },
   MongodbImg: {
     id: 7,
     name: "Mongodb",
@@ -72,6 +77,7 @@ export const images = {
     name: "React-Router",
     image: "/projectsTags/react-router-svgrepo-com.svg",
   },
+
   tailwindImg: {
     id: 10,
     name: "Tailwind",
