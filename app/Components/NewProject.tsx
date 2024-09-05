@@ -77,14 +77,72 @@ export const images = {
     name: "Tailwind",
     image: "/projectsTags/tailwind-svgrepo-com.svg",
   },
-  reduxtoolkitImg: {
+  awss3: {
     id: 11,
-    name: "Redux Toolkit",
-    image: "/projectsTags/redux-svgrepo-com.svg",
+    name: "Amazon S3 Bucket",
+    image:
+      "/projectsTags/redux-svgrepo-com.svgstorage-amazon-s3-bucket-with-objects.svg",
+  },
+  cloudflare: {
+    id: 12,
+    name: "Cloudflare",
+    image: "/projectsTags/cloudflare.svg",
+  },
+  lucia: {
+    id: 13,
+    name: "Lucia Auth",
+    image: "/projectsTags/saint-lucia.svg",
+  },
+  openai: {
+    id: 14,
+    name: "Open AI",
+    image: "/projectsTags/openai.svg",
+  },
+  postgresql: {
+    id: 15,
+    name: "Postgresql",
+    image: "/projectsTags/postgresql.svg",
   },
 };
 
 const projects = [
+  {
+    id: 9,
+    title: "FutureBuild",
+    imgurl: "/futurebuild.png",
+    tags: ["Next JS", "Tailwind", "Prisma", "Mongodb", "Radix UI"],
+    github: "https://github.com/Iamrahul4u/futurebuild",
+    videoLink:
+      "https://res.cloudinary.com/duavblp7s/video/upload/v1725560084/hv0xckssv5qgm2oqamux.mp4",
+    linkedIn:
+      "https://www.linkedin.com/posts/iamrahul4u_futurebuild-nextjs-opensource-activity-7237511412099489792-2Q46?utm_source=share&utm_medium=member_desktop",
+    liveLink: "https://futurebuildv1.vercel.app/",
+    icons: [
+      images.react,
+      images.nextjsImg,
+      images.tailwindImg,
+      images.prismaImg,
+      images.awss3,
+      images.cloudflare,
+      images.radixUiImg,
+      images.lucia,
+      images.openai,
+      images.postgresql,
+      images.shadcnImg,
+    ],
+
+    description:
+      "Job Portal, Resume Builder, and Coding Platform With AI Assistant.",
+  },
+  {
+    id: 10,
+    title: "Issue Tracker",
+    imgurl: "/Issue-tracker.png",
+    tags: ["React", "Next JS", "Tailwind", "Prisma", "Mongodb", "Radix UI"],
+
+    description:
+      "A comprehensive issue tracking application built with the MERN stack, enabling efficient management and resolution of project tasks.",
+  },
   {
     id: 7,
     title: "Issue Tracker",

@@ -46,7 +46,7 @@ export function DockDemo() {
           </Link>
         </DockIcon>
         <DockIcon>
-          <Link href="https://wa.me/+919990925165 " target="_blank">
+          <Link href="https://www.linkedin.com/in/iamrahul4u/" target="_blank">
             <Image alt="linkedin logo" src={linkedin} height={28} width={28} />
           </Link>
         </DockIcon>
