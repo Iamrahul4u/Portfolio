@@ -1,76 +1,46 @@
-.navi {
-  min-height: 100vh;
-  /* overflow: hidden; */
-  display: grid;
-  place-items: center;
+/* Styles that are complex or don't have direct Tailwind equivalents */
+
+.custom-list-item {
+  border-bottom: solid #000 0.05rem; /* Specific border thickness and color */
+  /* position: relative; */ /* Handled by Tailwind's `relative` */
+  /* z-index: 10; */ /* Handled by Tailwind's `z-10` */
 }
 
-.navi ul {
-  width: 80%;
+.certificate-title {
+  /* display: block; */ /* Handled by Tailwind's `block` or `inline-block` */
+  /* font-weight: 500; */ /* Handled by Tailwind's `font-medium` */
+  /* z-index: 10; */ /* Handled by Tailwind's `z-10` on parent or self */
+  mix-blend-mode: difference; /* No direct Tailwind equivalent */
+  /* color: white; */ /* Handled by Tailwind's `text-white` */
+  /* text-transform: uppercase; */ /* Handled by Tailwind's `uppercase` */
+  /* position: relative; */ /* Handled by Tailwind's `relative` */
 }
 
-.navi ul li {
-  border-bottom: solid #000 0.05rem;
-  position: relative;
-  z-index: 10;
-}
+/* 
+  The following styles from the original Certification.css have been migrated to Tailwind CSS classes 
+  or are handled by inline styles in the Certificates.jsx component:
 
-.navi ul li .link {
-  display: flex;
-  padding: 4rem 0 2rem 0;
-  z-index: 10;
-  justify-content: space-between;
-}
+  .navi
+  .navi ul
+  .navi ul li .link (now .link-item in JSX)
+  .navi ul li .link > img (styles applied directly to SVG or its container)
+  .hover-reveal (most properties are now Tailwind classes or inline styles for dynamic values)
+  .hover-reveal img (now .hidden-img in JSX, most properties are Tailwind or inline)
 
-.navi ul li .link span {
-  display: block;
-  font-weight: 500;
-  z-index: 10;
-  mix-blend-mode: difference;
-  display: inline-block;
-  position: relative;
-  color: white;
-  text-transform: uppercase;
-}
-.navi ul li .link > img {
-  z-index: 10;
-}
+  Media query adjustments have also been applied directly using Tailwind's responsive prefixes (e.g., md:).
+*/
 
-.hover-reveal {
-  position: absolute;
-  width: 600px;
-  height: 400px;
-  top: 50%;
-  left: 20%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all 0.5s ease-out;
-}
+/* Minimal CSS for hover-reveal if absolutely necessary beyond Tailwind + inline styles for transitions */
+/* However, transitions are already defined in Certficates.jsx using Tailwind classes like:
+   - For hover-reveal div: transition-all duration-500 ease-out
+   - For Image component: transition-transform duration-400 ease-out
+   So, explicit transition rules here might be redundant.
+*/
 
-.hover-reveal img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  transition: transform 0.4s ease-out;
-  overflow: hidden;
-}
+/* .hover-reveal { */
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */ /* Example if Tailwind wasn't handling it */
+/* } */
 
-@media (max-width: 768px) {
-  .navi ul {
-    width: 93%;
-  }
-  .navi ul li a span {
-    font-size: 2.5rem;
-  }
-  .navi ul li a > img {
-    height: 18px;
-  }
-  .hover-reveal {
-    width: 220px;
-    height: 300px;
-  }
-}
+/* .hover-reveal img { */
+  /* transition: transform 0.3s ease; */ /* Example if Tailwind wasn't handling it */
+/* } */

@@ -57,24 +57,6 @@ module.exports = {
             opacity: 0,
           },
         },
-      },
-      animation: {
-        shimmer: "shimmer 8s infinite",
-      },
-      keyframes: {
-        shimmer: {
-          "0%, 90%, 100%": {
-            "background-position": "calc(-100% - var(--shimmer-width)) 0",
-          },
-          "30%, 60%": {
-            "background-position": "calc(100% + var(--shimmer-width)) 0",
-          },
-        },
-      },
-      animation: {
-        shimmer: "shimmer 2s linear infinite",
-      },
-      keyframes: {
         shimmer: {
           from: {
             backgroundPosition: "0 0",
@@ -83,6 +65,10 @@ module.exports = {
             backgroundPosition: "-200% 0",
           },
         },
+      },
+      animation: {
+        meteor: "meteor 5s linear infinite", // Keep existing meteor animation
+        shimmer: "shimmer 2s linear infinite", // Keep the simpler shimmer animation
       },
       colors: {
         primary: {

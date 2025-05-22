@@ -19,7 +19,7 @@ function ProjectCard({ project }) {
         {/* Set fixed height for the container */}
         {!isVideo && (
           <Image
-            alt="img"
+            alt={project.title}
             src={project.imgurl}
             width={400} // Set fixed width
             height={800} // Set fixed height
