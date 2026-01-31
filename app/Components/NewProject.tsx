@@ -128,7 +128,7 @@ const projects = [
       images.nextjsImg,
       images.tailwindImg,
       images.prismaImg,
-      images.awss3,
+
       images.cloudflare,
       images.radixUiImg,
       images.lucia,

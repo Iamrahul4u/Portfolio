@@ -68,18 +68,7 @@ export const BentoGridItem = ({
           </div>
           {liveLink && <AnimatedShinyTextDemo link={liveLink} />}
         </div>
-        <div className="flex md:flex-row flex-col gap-2">
-          <ProjectButton
-            name={"Github"}
-            href={github}
-            icon={<AiOutlineGithub />}
-          />
-          <ProjectButton
-            name={"LinkedIn"}
-            href={linkedIn}
-            icon={<AiFillLinkedin />}
-          />
-        </div>
+
       </div>
     </div>
     // </CardBody>

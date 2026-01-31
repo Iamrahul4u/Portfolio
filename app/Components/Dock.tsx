@@ -21,14 +21,10 @@ export function DockDemo() {
   return (
     <div className="relative z-[100] flex mx-auto w-full max-w-[32rem] flex-col items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl">
       <Dock>
-        <DockIcon>
-          <Link href="https://github.com/iamrahul4u/" target="_blank">
-            <Image alt="Github logo" src={github} height={24} width={24} />
-          </Link>
-        </DockIcon>
+
 
         <DockIcon>
-          <Link href="https://wa.me/+919990925165 " target="_blank">
+          <Link href="https://wa.me/918767547779" target="_blank">
             <Image
               alt="whatsapp logo"
               src={whatsappLogo}
@@ -39,14 +35,14 @@ export function DockDemo() {
         </DockIcon>
         <DockIcon>
           <Link
-            href="https://mail.google.com/mail/?view=cm&to=iamrahulgupta4u@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=Shaikhnajeeb001@gmail.com"
             target="_blank"
           >
             <Image alt="gmail logo" src={gmail} height={24} width={24} />
           </Link>
         </DockIcon>
         <DockIcon>
-          <Link href="https://www.linkedin.com/in/iamrahul4u/" target="_blank">
+          <Link href="https://www.linkedin.com/in/shaikh-najeeb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
             <Image alt="linkedin logo" src={linkedin} height={28} width={28} />
           </Link>
         </DockIcon>
