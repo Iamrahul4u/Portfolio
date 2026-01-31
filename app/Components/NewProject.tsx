@@ -207,22 +207,7 @@ const projects = [
     description:
       "A fast and responsive pizza ordering application built with React and Redux, featuring seamless navigation and dynamic data handling.",
   },
-  {
-    id: 6,
-    title: "Portfolio",
-    imgurl: "/web6.png",
-    tags: ["React", "Next JS", "Tailwind"],
-    github: "https://github.com/Iamrahul4u/Portfolio",
-    videoLink:
-      "https://res.cloudinary.com/duavblp7s/video/upload/v1700546799/Portfolio_-_Brave_2023-10-06_01-38-33_wy8yjz.mp4",
-    linkedIn:
-      "https://www.linkedin.com/feed/update/urn:li:activity:7115196017913819136/",
-    icons: [images.react, images.nextjsImg, images.tailwindImg],
-    liveLink: "https://iamrahul4u.vercel.app/",
 
-    description:
-      "My personal portfolio website showcasing various projects and skills, built with Next.js and styled using Tailwind CSS.",
-  },
   {
     id: 2,
     title: "WorldWise",
